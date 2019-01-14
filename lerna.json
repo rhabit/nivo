@@ -4,7 +4,7 @@
     "packages/*",
     "api"
   ],
-  "version": "0.52.1",
+  "version": "0.52.1-rhabit",
   "npmClient": "yarn",
   "useWorkspaces": true
 }
