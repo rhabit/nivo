@@ -70,6 +70,8 @@ const Line = props => {
         dotLabel,
         dotLabelFormat,
         dotLabelYOffset,
+        dotXOffset,
+        dotYOffset,
 
         markers,
 
@@ -210,6 +212,8 @@ const Line = props => {
                             label={dotLabel}
                             labelFormat={dotLabelFormat}
                             labelYOffset={dotLabelYOffset}
+                            dotXOffset={dotXOffset}
+                            dotYOffset={dotYOffset}
                             theme={theme}
                             {...motionProps}
                         />

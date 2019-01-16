@@ -24,9 +24,11 @@ const DotsItem = ({
     label,
     labelTextAnchor,
     labelYOffset,
+    dotXOffset={dotXOffset},
+    dotYOffset={dotYOffset},
     theme,
 }) => (
-    <g transform={`translate(${x}, ${y})`} style={{ pointerEvents: 'none' }}>
+    <g transform={`translate(${x + dotXOffset}, ${y + dotYOffset})`} style={{ pointerEvents: 'none' }}>
         {React.createElement(symbol, {
             size: size,
             color: color,
@@ -57,6 +59,8 @@ DotsItem.propTypes = {
     label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     labelTextAnchor: PropTypes.oneOf(['start', 'middle', 'end']),
     labelYOffset: PropTypes.number.isRequired,
+    dotXOffset: PropTypes.number.isRequired,
+    dotYOffset: PropTypes.number.isRequired,
 
     theme: PropTypes.shape({
         dots: dotsThemePropType.isRequired,
@@ -69,6 +73,8 @@ export const DotsItemDefaultProps = {
     // label
     labelTextAnchor: 'middle',
     labelYOffset: -12,
+    dotXOffset: 0,
+    dotYOffset: 0,
 }
 
 DotsItem.defaultProps = DotsItemDefaultProps

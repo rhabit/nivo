@@ -24,6 +24,8 @@ const LineDots = ({
     label,
     labelFormat,
     labelYOffset,
+    dotXOffset,
+    dotYOffset,
 
     theme,
 
@@ -70,6 +72,8 @@ const LineDots = ({
                         borderColor={point.stroke}
                         label={point.label}
                         labelYOffset={labelYOffset}
+                        dotXOffset={dotXOffset}
+                        dotYOffset={dotYOffset}
                         theme={theme}
                     />
                 ))}
@@ -108,6 +112,8 @@ const LineDots = ({
                             borderColor={point.stroke}
                             label={point.label}
                             labelYOffset={labelYOffset}
+                            dotXOffset={dotXOffset}
+                            dotYOffset={dotYOffset}
                             theme={theme}
                         />
                     ))}
