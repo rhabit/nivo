@@ -24,8 +24,8 @@ const DotsItem = ({
     label,
     labelTextAnchor,
     labelYOffset,
-    dotXOffset={dotXOffset},
-    dotYOffset={dotYOffset},
+    dotXOffset,
+    dotYOffset,
     theme,
 }) => (
     <g transform={`translate(${x + dotXOffset}, ${y + dotYOffset})`} style={{ pointerEvents: 'none' }}>
