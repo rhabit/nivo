@@ -17,7 +17,7 @@
     "url": "https://github.com/plouc"
   },
   "keywords": [],
-  "devDependencies": {
+  "dependencies": {
     "@ekino/config": "^0.3.0",
     "@nivo/babel-preset": "^0.32.0-9",
     "@nivo/generators": "^0.48.0",
